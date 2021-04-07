@@ -5,7 +5,7 @@ int main()
     printf("Enter the value of n1,n2,n3: ");
     scanf("\n%d%d%d: ", &n1,&n2,&n3);
 
-    min = (n1<n2) ? n1<n3? n1:n3 : n2<n3 ? n2:n3;
+    min = (n1<n2) ? (n1<n3? n1:n3) : (n2<n3 ? n2:n3);
     for(i=min; i>=1; i--)
     {
         if(n1%i==0 && n2%i==0 && n3%i==0)
